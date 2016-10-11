@@ -3,11 +3,12 @@
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse
 
 
-```Given a date string of "March 7, 2014", parse() assumes a local time zone, but given an ISO format such as "2014-03-07" it will assume a time zone of UTC (ES5 and ECMAScript 2015). Therefore Date objects produced using those strings may represent different moments in time depending on the version of ECMAScript supported unless the system is set with a local time zone of UTC. This means that two date strings that appear equivalent may result in two different values depending on the format of the string that is being converted.
+```
+Given a date string of "March 7, 2014", parse() assumes a local time zone, but given an ISO format such as "2014-03-07" it will assume a time zone of UTC (ES5 and ECMAScript 2015). Therefore Date objects produced using those strings may represent different moments in time depending on the version of ECMAScript supported unless the system is set with a local time zone of UTC. This means that two date strings that appear equivalent may result in two different values depending on the format of the string that is being converted.
 ```
   
 ```
- new Date("2016-07-15")
+new Date("2016-07-15")
 Fri Jul 15 2016 07:00:00 GMT+0700 (ICT)
 new Date("2016-7-15")
 Fri Jul 15 2016 00:00:00 GMT+0700 (ICT)
